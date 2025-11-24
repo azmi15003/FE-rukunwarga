@@ -112,7 +112,8 @@ const selectedType = ref('penemuan'); // Default filter: penemuan
 const currentPage = ref(1);
 const pageSize = ref(10);
 const totalItems = ref(0);
-const getImageUrl = (path) => `http://localhost:4000${path}` // sesuaikan dengan backend
+const getImageUrl = (path) =>
+  `${import.meta.env.VITE_FILES_URL}${path}`;
 
 // Open/Close Form
 const openFormDialog = () => {

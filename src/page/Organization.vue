@@ -101,7 +101,7 @@ const fetchStructure = async (organizationId) => {
 
 // Generate image URL
 const getImageUrl = (path) =>
-  `${import.meta.env.VITE_API_URL}${path}`;
+  `${import.meta.env.VITE_FILES_URL}${path}`;
 
 // On mount
 onMounted(() => {

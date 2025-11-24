@@ -102,9 +102,8 @@ const beforeUpload = (file) => {
   return isImage && isLt2M;
 };
 
-const getImageUrl = (path) => {
-    return `http://localhost:4000${path}`
-}
+const getImageUrl = (path) =>
+  `${import.meta.env.VITE_FILES_URL}${path}`;
 
 const handleUploadError = () => {
   ElMessage.error('Upload gagal');

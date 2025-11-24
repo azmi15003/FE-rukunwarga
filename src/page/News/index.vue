@@ -96,7 +96,8 @@ const pagination = ref({
   total: 0
 })
 
-const getImageUrl = (path) => `http://localhost:4000${path}`
+const getImageUrl = (path) =>
+  `${import.meta.env.VITE_FILES_URL}${path}`;
 
 const paginatedNews = computed(() => {
   const start = (pagination.value.currentPage - 1) * pagination.value.pageSize

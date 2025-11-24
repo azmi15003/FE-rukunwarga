@@ -49,7 +49,7 @@ const route = useRoute()
 const type = computed(() => route.path.split('/').pop())
 
 const getImageUrl = (path) =>
-  `${import.meta.env.VITE_API_URL}${path}`;
+  `${import.meta.env.VITE_FILES_URL}${path}`;
 
 const fetchInformation = async () => {
   if (loading.value || page.value > totalPages.value) return
