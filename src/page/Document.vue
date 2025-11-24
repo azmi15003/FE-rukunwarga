@@ -122,10 +122,10 @@
 <script setup>
 import { ref, reactive, onMounted } from 'vue';
 import { ElMessage, ElMessageBox } from 'element-plus';
-import axios from 'axios'; // Import Axios
+import axios from '@/utils/axios'
 
 // --- Configuration ---
-const API_BASE_URL = 'http://localhost:4000'; // URL server backend Anda
+const API_BASE_URL = import.meta.env.VITE_API_URL
 
 // --- Refs untuk Visibilitas Dialog ---
 const createTypeDialogVisible = ref(false);
