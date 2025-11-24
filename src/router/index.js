@@ -11,7 +11,7 @@ import ListInformation from '@/page/Information.vue'
 import Warga from '@/page/inhabitant/index.vue'
 import DetailWarga from '@/page/DetailWarga.vue'
 import Banner from '@/page/banner/index.vue'
-import Document from '@/page/document.vue'
+import Document from '@/page/Document.vue'
 
 const routes = [
   {
