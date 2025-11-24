@@ -10,7 +10,7 @@
 <script setup>
 import { reactive } from 'vue'
 import OrganizationNode from './OrganizationNode.vue'
-import axios from 'axios'
+import axios from '@/utils/axios'
 
 const root = reactive({
   key: '0',
