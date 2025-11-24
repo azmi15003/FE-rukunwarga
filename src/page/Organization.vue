@@ -100,11 +100,8 @@ const fetchStructure = async (organizationId) => {
 };
 
 // Generate image URL
-const getImageUrl = (imgPath) => {
-  if (!imgPath) return "";
-  const base = import.meta.env.VITE_API_URL || "http://localhost:4000";
-  return `${base}${imgPath}`;
-};
+const getImageUrl = (path) =>
+  `${import.meta.env.VITE_API_URL}${path}`;
 
 // On mount
 onMounted(() => {

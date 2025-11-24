@@ -48,7 +48,8 @@ const route = useRoute()
 // Ambil `type` dari segment terakhir path
 const type = computed(() => route.path.split('/').pop())
 
-const getImageUrl = (path) => `http://localhost:4000${path}`
+const getImageUrl = (path) =>
+  `${import.meta.env.VITE_API_URL}${path}`;
 
 const fetchInformation = async () => {
   if (loading.value || page.value > totalPages.value) return

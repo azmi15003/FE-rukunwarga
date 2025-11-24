@@ -40,7 +40,8 @@ const page = ref(1)
 const limit = 6
 const totalPages = ref(1)
 
-const getImageUrl = (path) => `http://localhost:4000${path}` // sesuaikan dengan backend
+const getImageUrl = (path) =>
+  `${import.meta.env.VITE_API_URL}${path}`;
 
 const fetchInformation = async () => {
   if (loading.value || page.value > totalPages.value) return

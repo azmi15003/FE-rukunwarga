@@ -189,7 +189,8 @@ const getNews = async (page = 1, limit = 10) => {
   }
 };
 
-const getImageUrl = (path: string) => `http://localhost:4000${path}`;
+const getImageUrl = (path) =>
+  `${import.meta.env.VITE_API_URL}${path}`;
 
 const scrollToHash = () => {
   if (route.hash) {
